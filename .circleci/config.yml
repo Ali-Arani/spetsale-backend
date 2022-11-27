@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Create app.yaml
           command: |          
-            echo -e "runtime: nodejs16\nenv_variables:\n  ATLASDB: $ATLASDB\n  SECRETKEY: $SECRETKEY\n  ATLASDB_PASSWORD:$ATLASDB_PASSWORD\n  ATLASDB_USERNAME:$ATLASDB_USERNAME\n" > app.yaml
+            echo -e "runtime: nodejs16\nenv_variables:\n  ATLASDB: $ATLASDB\n  SECRETKEY: $SECRETKEY\n  ATLASDB_PASSWORD: $ATLASDB_PASSWORD\n  ATLASDB_USERNAME: $ATLASDB_USERNAME\n" > app.yaml
 
       - run:
           name: Setup Google Cloud CLI
